@@ -1,6 +1,6 @@
 module ArtistsHelper
   def display_artist(song)
-    if song.artist.emtpy?
+    if song.artist.empty?
       link_to "Add Artist", song_edit_path
     else
       link_to song.artist.name, song.artist
